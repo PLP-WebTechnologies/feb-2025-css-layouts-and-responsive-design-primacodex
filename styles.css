@@ -1,0 +1,164 @@
+/* ---------- Base Styles (Mobile-First) ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+/* Flex Section */
+.flex-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+/* Grid Section */
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.service-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+button {
+  padding: 0.75rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Tablets (≥ 601px and ≤ 992px) */
+@media (min-width: 601px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flex-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-section > div {
+    flex: 1;
+    margin: 0 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Desktops (≥ 993px) */
+@media (min-width: 993px) {
+  .grid-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav {
+    padding: 0 2rem;
+  }
+
+  .flex-section > div {
+    padding: 0 1rem;
+  }
+}

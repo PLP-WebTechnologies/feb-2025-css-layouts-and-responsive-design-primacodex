@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Webpage with Flexbox and Grid</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">My Website</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Welcome to My Website</h1>
+        <div class="grid-section">
+          <div class="service-item">
+            <p>
+              This is a simple responsive webpage using Flexbox and CSS Grid.
+            </p>
+          </div>
+          <div class="service-item">
+            <p>
+              This is a simple responsive webpage using Flexbox and CSS Grid.
+            </p>
+          </div>
+          <div class="service-item">
+            <p>
+              This is a simple responsive webpage using Flexbox and CSS Grid.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="flex-section">
+          <div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum
+            </p>
+          </div>
+          <div>
+            <img src="/assets/download.jpg" alt="carimage" />
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>My Services</h2>
+        <div class="grid-section">
+          <div class="service-item">Web Design</div>
+          <div class="service-item">Web Development</div>
+          <div class="service-item">SEO Optimization</div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="flex-section">
+          <p>If you would like to get in touch, please fill out the form.</p>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
